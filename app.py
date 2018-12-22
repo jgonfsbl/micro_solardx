@@ -13,7 +13,7 @@ TAG = SOUP.find_all("b")
 
 exitformat = {
     'timestamp':
-        datetime.now(timezone.utc).strftime("%Y%m%dT%H:%M:%SUTC"),
+        datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SUTC"),
     'dx-data': {
         'sfi': TAG[8].text.strip(),
         'ssn': TAG[6].text.strip(),
